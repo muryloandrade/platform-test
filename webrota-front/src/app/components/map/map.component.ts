@@ -26,6 +26,10 @@ export class MapComponent implements OnInit {
     }).addTo(this.map);
 
     var endpointUrl = 'http://localhost:5000/getMarkers';
+    var customIcon = L.icon({
+      iconUrl: 'https://www.pngall.com/wp-content/uploads/2017/05/Map-Marker-Free-Download-PNG.png',
+      iconSize: [50, 50], // Tamanho do ícone
+    });
     const polygonPoints: [number, number][] = [];
 
     this.httpClient.get<IMarker[]>(endpointUrl).subscribe(
@@ -36,7 +40,7 @@ export class MapComponent implements OnInit {
             var lat = Number(marker.latitude);
             var long = Number(marker.longitude);
             polygonPoints.push([lat, long]);
-            if (this.map) L.marker([lat, long]).addTo(this.map);
+            if (this.map) L.marker([lat, long], { icon: customIcon }).addTo(this.map);
 
           });
         } else {
