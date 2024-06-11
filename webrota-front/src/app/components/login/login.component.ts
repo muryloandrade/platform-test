@@ -16,14 +16,9 @@ export class LoginComponent {
   login() {
     var email = (document.getElementById('emailInput') as HTMLInputElement)?.value;
     var senha = (document.getElementById('senhaInput') as HTMLInputElement)?.value;
-    const endpointUrl = 'https://jsonplaceholder.typicode.com/users';
+    const endpointUrl = `http://localhost:5000/authenticate?user=${email}&password=${senha}`;
 
-    this.httpClient.get(endpointUrl,{
-      params: {
-        email: email,
-        senha: senha
-      }
-    }).subscribe(
+    this.httpClient.get(endpointUrl).subscribe(
       (data) => {
         console.log(data);
         window.location.href = '/map';
