@@ -1,0 +1,23 @@
+@import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+
+
+.btn-primary{
+    background-color: #f58634;
+    border-color: #f58634;
+
+    /* hover */
+    &:hover{
+        background-color: white;
+        border-color: #f58634;
+        color: #f58634;
+    }
+}
+
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+}
