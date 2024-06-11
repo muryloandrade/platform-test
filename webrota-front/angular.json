@@ -16,9 +16,7 @@
             "outputPath": "dist/webrota-front",
             "index": "src/index.html",
             "browser": "src/main.ts",
-            "polyfills": [
-              "zone.js"
-            ],
+            "polyfills": ["zone.js"],
             "tsConfig": "tsconfig.app.json",
             "assets": [
               {
@@ -26,15 +24,8 @@
                 "input": "public"
               }
             ],
-            "styles": [
-              "src/styles.css"
-            ],
-            "scripts": [],
-            "server": "src/main.server.ts",
-            "prerender": true,
-            "ssr": {
-              "entry": "server.ts"
-            }
+            "styles": ["src/styles.css"],
+            "scripts": []
           },
           "configurations": {
             "production": {
@@ -78,10 +69,7 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "polyfills": [
-              "zone.js",
-              "zone.js/testing"
-            ],
+            "polyfills": ["zone.js", "zone.js/testing"],
             "tsConfig": "tsconfig.spec.json",
             "assets": [
               {
@@ -91,7 +79,8 @@
             ],
             "styles": [
               "styles.css",
-              "../node_modules/bootstrap/dist/css/bootstrap.min.css"
+              "../node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "../node_modules/leaflet/dist/leaflet.css"
             ],
             "scripts": [
               "node_modules/jquery/dist/jquery.slim.min.js",
@@ -104,6 +93,6 @@
     }
   },
   "cli": {
-    "analytics": "714a5a3e-1564-4b2c-95fa-88a15201d568"
+    "analytics": "2c985360-8870-4db8-bbe3-8f452533881a"
   }
 }

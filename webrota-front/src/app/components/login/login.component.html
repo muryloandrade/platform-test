@@ -7,8 +7,8 @@
 <div class="container-fluid d-flex justify-content-center align-items-center vh-100">
   <div class="flex-column d-flex justify-content-center align-items-center">
     <img src="https://www.webrota.com.br/assets/img/logo-min.png" alt="Web Rota Logo" class="logo mb-4">
-    <input type="text" class="form-control w-75 mb-3" placeholder="Digite seu e-mail">
-    <input type="password" class="form-control w-75 mb-3" placeholder="Digite sua senha">
-    <button class="btn btn-primary w-75">Entrar</button>
+    <input id="emailInput" type="text" class="form-control w-75 mb-3" placeholder="Digite seu e-mail">
+    <input id="senhaInput" type="password" class="form-control w-75 mb-3" placeholder="Digite sua senha">
+    <button class="btn btn-primary w-75" (click)="login()">Entrar</button>
   </div>
 </div>
