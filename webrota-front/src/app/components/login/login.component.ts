@@ -16,7 +16,7 @@ export class LoginComponent {
   login() {
     var email = (document.getElementById('emailInput') as HTMLInputElement)?.value;
     var senha = (document.getElementById('senhaInput') as HTMLInputElement)?.value;
-    const endpointUrl = `http://localhost:5000/authenticate?user=${email}&password=${senha}`;
+    var endpointUrl = `http://localhost:5000/authenticate?user=${email}&password=${senha}`;
 
     this.httpClient.get(endpointUrl).subscribe(
       (data) => {
