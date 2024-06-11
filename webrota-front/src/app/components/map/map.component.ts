@@ -9,6 +9,7 @@ import { LatLngExpression } from 'leaflet';
   templateUrl: './map.component.html',
   styleUrls: ['./map.component.css'],
 })
+
 export class MapComponent implements OnInit {
   private map: L.Map | undefined;
 
@@ -20,9 +21,9 @@ export class MapComponent implements OnInit {
     }).addTo(this.map);
 
     const polygonPoints = [
-      [46.879966, -121.726909], // Ponto 1
-      [46.879966, -121.726909 + 0.1], // Ponto 2
-      [46.879966 + 0.1, -121.726909 + 0.1], // Ponto 3
+      [46.879966, -121.726909],
+      [46.879966, -121.726909 + 0.1],
+      [46.879966 + 0.1, -121.726909 + 0.1],
     ];
 
     L.polygon(
@@ -31,9 +32,9 @@ export class MapComponent implements OnInit {
         | LatLngExpression[][]
         | LatLngExpression[][][],
       {
-        color: 'blue', // Cor da borda
-        fillColor: 'lightblue', // Cor de preenchimento
-        fillOpacity: 0.5, // Opacidade do preenchimento
+        color: 'blue',
+        fillColor: 'lightblue',
+        fillOpacity: 0.5,
       }
     ).addTo(this.map);
   }
