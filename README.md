@@ -1,41 +1,34 @@
 ## ![logo](https://www.webrota.com.br/assets/img/logo-min.png)   
 
-Hey! Seja bem vindo, este é o playground de criatividade da **WebRota**, esse repositório é nossa porta de entrada.
+## Feitor por:
+
+@muryloandrade
 
 ## Como funciona?
 
-Faça um fork deste projeto, siga as instruções de desenvolvimento abaixo, aplique sua criatividade e suas técnicas ninja e nos mostre seu código. 
+Sistema com login, markers no mapa!
 
-## O que fazer?
 
-- Crie uma aplicação simples com conexão à um banco de sua escolha.
-- Implemente autenticação e coloque os usuários no banco.
-- Utilize o arquivo **positions.json** contido nesse repositório e faça um mapa através da API de sua escolha para renderiza-lo, criando marcadores em cada coordenada contida no JSON. Esse arquivo contém uma lista de coordenadas de um trajeto cronológico, seria muito interessante a renderização de uma linha polígono unindo-as.
-- Documente seu código e as instruções de como executa-lo.
+## Como rodar?
 
-### Bônus level
+rode o comando para gerar o banco de dados e o front:
 
-- Deixe sua aplicação preparada para containers.
-- Faça sua aplicação atualizar as posições de forma temporizada através do parsing da url de raw do json deste repositório.
-- Exiba a soma da distância dos pontos renderizados.
-- Permita a criação de novos pontos no mapa. 
+```sudo docker-compose up```
 
-## O que devo utilizar?
+depois rode o comando para rodar o back:
 
-Nós acreditamos que bons desenvolvedores não são apenas usuários de linguagens ou de frameworks e que estão sempre preparados ao dinamismo. Utilize oque lhe deixar mais confortável e nos mostre seu potencial.
+```cd webrota-api && python3 main.py```
 
-Bom, não se apegue a essa questão, mas se estiver curioso à respeito de que utilizamos aqui no nosso dia à dia, segue a relação das principais.
+depois acesse o endereço:
+
+```http://localhost:4200/login```
+
+
+## O que utilizei?
 
 - Python 3+
 - Flask + Marshmallow
 - Bootstrap 4
-- Angular 7
-- MySQL + Redis + RabbitMQ
-
-## E agora?
-
-Tudo pronto! Faça um pull request ou nos notifique do fork através do e-mail mauro@webrota.com.br
-
-Vem com a gente! 
-
-:)
+- Angular 10+
+- Postgres
+- Docker
