@@ -13,22 +13,20 @@ services:
     volumes:
       - ./webrota-api/scripts/init.sql:/docker-entrypoint-initdb.d/init.sql
 
-  python:
-    build:
-      context: ./webrota-api
-    volumes:
-      - ./app:/app
-    depends_on:
-      - db
-    ports:
-      - "5000:5000"
+  # python:
+  #   build:
+  #     context: ./webrota-api
+  #   volumes:
+  #     - ./app:/app
+  #   depends_on:
+  #     - db
+  #   ports:
+  #     - "5000:5000"
 
   web:
     build:
       context: ./webrota-front
     volumes:
       - ./webrota-web:/webrota-web
-    depends_on:
-      - python
     ports:
       - "4200:4200"
