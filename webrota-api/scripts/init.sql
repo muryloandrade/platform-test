@@ -31,4 +31,4 @@ INSERT INTO markers (date_time, latitude, longitude) VALUES
 ('2019-02-12 10:50:06', -18.91814500, -48.26453700);
 
 
-INSERT INTO users (username, password) VALUES ('webrota', 'teste');
+INSERT INTO users (username, password) VALUES ('webrota@gmail.com', 'teste');

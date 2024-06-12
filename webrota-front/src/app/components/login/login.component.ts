@@ -25,6 +25,7 @@ export class LoginComponent {
       },
       (error) => {
         console.error('Error fetching data:', error);
+        alert('Ocorrereu um erro ao fazer login');
       }
     );
   }

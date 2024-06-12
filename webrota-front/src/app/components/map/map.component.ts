@@ -80,6 +80,7 @@ export class MapComponent implements OnInit {
       },
       (error) => {
         console.error('Error fetching data:', error);
+        alert('Erro ao buscar marcadores');
       }
     );
   }

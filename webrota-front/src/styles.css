@@ -2,18 +2,25 @@
 @import '../node_modules/leaflet/dist/leaflet.css';
 
 
-.btn-primary{
-    background-color: #FD7E14;
-    border-color: #FD7E14;
+.btn-primary {
+  background-color: #FD7E14;
+  border-color: #FD7E14;
 
-    /* hover */
-    &:hover{
-        background-color: white;
-        border-color: #FD7E14;
-        color: #FD7E14;
-    }
+  /* hover */
+  &:hover {
+    background-color: white;
+    border-color: #FD7E14;
+    color: #FD7E14;
+  }
+
+
 }
 
+.btn-primary:not(:disabled):not(.disabled):active {
+  background-color: white;
+  border-color: #FD7E14;
+  color: #FD7E14;
+}
 
 body,
 html {
