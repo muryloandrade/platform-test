@@ -2,4 +2,28 @@
   <div class="map-frame">
     <div id="map"></div>
   </div>
+  <div id="control-map" class="control-map">
+    <div class="control-map__item">
+      <button class="control-map__button" disabled>
+        <img src="icon_logo.png" class="w-50 h-50" alt="Map type">
+      </button>
+      <button class="control-map__button" (click)="zoomIn()">
+        +
+      </button>
+    </div>
+    <div class="control-map__item">
+      <button class="control-map__button" (click)="centerMap()">
+        ⟲
+      </button>
+    </div>
+    <div class="control-map__item">
+      <button class="control-map__button" (click)="zoomOut()">
+        -
+      </button>
+    </div>
+    <div class="control-map__item">
+      <button class="control-map__button" (click)="logout()">
+        <img src="https://cdn0.iconfinder.com/data/icons/ecommerce-24-1/24/Ecommerce_Outline_User_Logout-512.png" class="w-50 h-50" alt="Logout">
+      </button>
+    </div>
 </div>

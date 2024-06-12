@@ -5,13 +5,42 @@
   right: 0;
   bottom: 0;
   margin: 30px;
+  z-index: 0;
 }
 
 .map-frame {
-  border: 2px solid black;
   height: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 0;
 }
 
 #map {
   height: 100%;
+  z-index: 0;
 }
+
+.control-map {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 20;
+    height: fit-content;
+    justify-content: center;
+    display: flex;
+    background-color: #FD7E14;
+    border-radius: 10px;
+    gap: 20px;
+}
+
+.control-map__button {
+    font-size: 1.5rem;
+    border-radius: 10px;
+    background-color: #FD7E14;
+    color: white;
+    width: 50px;
+    outline: none;
+    border: none;
+}
+

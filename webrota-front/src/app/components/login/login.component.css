@@ -41,7 +41,7 @@
   font-size: 1.2rem;
   border-radius: 6px;
   &:focus {
-    border-color: #f58634;
+    border-color: #FD7E14;
     box-shadow: 0 0 0 0.2rem rgba(245, 134, 52, 0.25);
   }
 }

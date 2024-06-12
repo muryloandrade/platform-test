@@ -3,14 +3,14 @@
 
 
 .btn-primary{
-    background-color: #f58634;
-    border-color: #f58634;
+    background-color: #FD7E14;
+    border-color: #FD7E14;
 
     /* hover */
     &:hover{
         background-color: white;
-        border-color: #f58634;
-        color: #f58634;
+        border-color: #FD7E14;
+        color: #FD7E14;
     }
 }
 
