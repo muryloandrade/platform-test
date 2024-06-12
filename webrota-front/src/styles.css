@@ -1,7 +1,6 @@
 @import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 @import '../node_modules/leaflet/dist/leaflet.css';
 
-
 .btn-primary {
   background-color: #FD7E14;
   border-color: #FD7E14;
@@ -11,6 +10,14 @@
     background-color: white;
     border-color: #FD7E14;
     color: #FD7E14;
+  }
+
+  /* focus */
+  &:focus {
+    background-color: white;
+    border-color: #FD7E14;
+    color: #FD7E14;
+    box-shadow: 0 0 0 0.2rem rgba(253, 126, 20, 0.25);
   }
 
 
